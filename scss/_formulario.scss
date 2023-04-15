@@ -1,0 +1,118 @@
+/*Formulario*/
+.contacto-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.contacto-caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contacto-titulo{
+        margin: 60px;
+        font-size: 30px;
+        color: $font-color;
+    }
+    .contacto-parrafo{
+        margin: 40px;
+        font-size: 20px;
+        color: $font-color;
+    }
+}
+.contacto-formulario{
+    width: 800px;
+    border: solid 0.5px $font-color;
+    color: $font-color;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nombre     apellido"
+                         "email      telefono"
+                         "mensaje    mensaje"
+                         "boton      boton";
+
+                         
+}
+.contacto-formulario label{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    .contacto-formulario label:nth-child(1){
+        grid-area: nombre;
+    }
+    .contacto-formulario label:nth-child(2){
+        grid-area: apellido;
+    }
+    .contacto-formulario label:nth-child(3){
+        grid-area: email;
+    }
+    .contacto-formulario label:nth-child(4){
+        grid-area: telefono;
+    }
+    .contacto-formulario label:nth-child(5){
+        grid-area: mensaje;
+    }
+    .contacto-formulario label:nth-child(6){
+        grid-area: boton;
+    }
+    .contacto-formulario button{
+        grid-area: boton;
+        border: solid 0.5px;
+        color: $font-color;
+        padding: 10px;
+    }
+}
+.contacto-informacion{
+    background-color: black;
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .contacto-logo{
+        width: 400px;
+        height: 400px;
+    }
+    .contacto-info2{
+        padding: 30px;
+    }
+    .mapa{
+        padding: 30px;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media(max-width:750px){
+    .contenedor-contacto{
+        display: flex;
+        justify-content: center;
+        .contacto-img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .contacto-formulario{
+        justify-items: center;
+        width: 310px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat;
+        color: $font-color;
+        grid-template-areas: "nombre"
+                             "apellido"
+                             "email"
+                             "telefono"
+                             "mensaje"
+                             "boton";
+    }
+    .contacto-titulo{
+        margin: 15px;
+        font-size: 15px;
+    }
+    .contacto-parrafo{
+        margin: 10px;
+        font-size: 10px;
+    }
+}
+/*Formulario*/

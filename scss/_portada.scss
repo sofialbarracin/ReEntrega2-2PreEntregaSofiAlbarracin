@@ -1,0 +1,128 @@
+/* Navegador */
+.navbar-brand{
+    width: 75px;
+    height: 75px;
+}
+/* Fin de navegador */
+
+/*Portada*/
+body{
+    background-color: rgb(235, 233, 233);
+}
+.contenedor-portada{   
+    width: 100%;
+    height: 500px;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    flex-flow: row wrap;
+
+    .titulo1{
+        color: rgb(0, 0, 0);
+        font-size: 90px;
+        padding: 3rem;
+    }
+    .parrafo-portada{
+        color: rgb(242, 133, 59);
+        font-size: 40px;
+    }
+}
+.separador{
+    border:  solid 0.5px rgb(94, 91, 91);
+    margin: 3rem;
+}
+.contenedor-caja{
+    margin: 70px;
+    .caja-portada{
+        border: solid 1px black;
+        height: 600px;
+        margin: 15px;
+        border-radius: 10%;
+        background-color: rgb(242, 133, 59);
+        transition:1.5s;
+    }
+    .caja-portada:hover{
+        background-color: rgb(255, 186, 254);
+    }
+    .caja-portada h4{
+        color:$font-color;
+    }
+    img{
+        width: 160px;
+        padding: 15px;
+    }
+    .index-parrafo{
+        width: 300px;
+        height: 300px;
+        color:  $font-color;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media(max-width:800px){
+    .contenedor-portada{   
+        height: 600px;
+    }
+    .titulo1{
+        font-size: 5px;
+        padding: 0;
+    }
+    .parrafo-portada p{
+        font-size: 5px;
+    }
+    .contenedor-caja{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 23px;
+    }
+    .caja-portada{
+        border: solid 1px black;
+        height: 380px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .contenedor-caja img{
+        width: 70px;
+        padding: 5px;
+    }
+    .index-parrafo{
+        font-size: 15px;
+        height: 300px;
+        padding: 5px;
+    }
+    
+}
+/*
+@media (max-width:320px){
+    .contenedor-portada{   
+        width: 30%;
+        height: 250px;
+        flex-wrap: nowrap;
+    }
+    .titulo1{
+        font-size: 20px;
+        padding: 1rem;
+    }
+    .parrafo-portada{
+        font-size: 15px;
+    }
+    .contenedor-caja{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 23px;
+    }
+    .caja-portada{
+        border: solid 1px rgb(193, 7, 7);
+        margin: 10px;
+        padding: 10px;
+    }
+    .contenedor-caja img{
+        width: 70px;
+        padding: 5px;
+    }
+    .index-parrafo{
+        width: 100%;
+        height: 300px;
+        padding: 5px;
+    }
+}
+*/

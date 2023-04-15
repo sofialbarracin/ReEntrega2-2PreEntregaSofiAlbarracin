@@ -1,12 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap");
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
-}
-
 /* Navegador */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap");
 .navbar-brand {
   width: 75px;
   height: 75px;
@@ -23,20 +16,16 @@ body {
   height: 500px;
   background-color: rgb(235, 233, 233);
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: row wrap;
 }
 .contenedor-portada .titulo1 {
   color: rgb(0, 0, 0);
   font-size: 90px;
-  text-align: left;
   padding: 3rem;
 }
 .contenedor-portada .parrafo-portada {
   color: rgb(242, 133, 59);
   font-size: 40px;
-  text-align: end;
-  align-items: end;
 }
 
 .separador {
@@ -45,9 +34,6 @@ body {
 }
 
 .contenedor-caja {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
   margin: 70px;
 }
 .contenedor-caja .caja-portada {
@@ -56,13 +42,16 @@ body {
   margin: 15px;
   border-radius: 10%;
   background-color: rgb(242, 133, 59);
-  transition: width 1s, background-color 1s;
+  transition: 1.5s;
 }
 .contenedor-caja .caja-portada:hover {
-  background-color: rgb(248, 90, 216);
+  background-color: rgb(255, 186, 254);
 }
-.contenedor-caja .caja-portada img {
-  width: 170px;
+.contenedor-caja .caja-portada h4 {
+  color: rgb(94, 91, 91);
+}
+.contenedor-caja img {
+  width: 160px;
   padding: 15px;
 }
 .contenedor-caja .index-parrafo {
@@ -75,67 +64,88 @@ body {
 
 @media (max-width: 800px) {
   .contenedor-portada {
-    width: 50%;
-    height: 250px;
-    display: flex;
-    flex-wrap: nowrap;
+    height: 600px;
   }
-  .contenedor-portada .titulo1 {
-    font-size: 45px;
-    padding: 1rem;
+  .titulo1 {
+    font-size: 5px;
+    padding: 0;
   }
-  .contenedor-portada .parrafo-portada {
-    font-size: 20px;
+  .parrafo-portada p {
+    font-size: 5px;
   }
   .contenedor-caja {
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 23px;
   }
-  .contenedor-caja .caja-portada {
+  .caja-portada {
     border: solid 1px black;
-    height: 330px;
+    height: 380px;
     margin: 10px;
     padding: 10px;
   }
-  .contenedor-caja .contenedor-caja img {
+  .contenedor-caja img {
     width: 70px;
     padding: 5px;
   }
-  .contenedor-caja .index-parrafo {
-    width: 100%;
+  .index-parrafo {
+    font-size: 15px;
     height: 300px;
     padding: 5px;
   }
 }
-/*Fin de portada*/
+/*
+@media (max-width:320px){
+    .contenedor-portada{   
+        width: 30%;
+        height: 250px;
+        flex-wrap: nowrap;
+    }
+    .titulo1{
+        font-size: 20px;
+        padding: 1rem;
+    }
+    .parrafo-portada{
+        font-size: 15px;
+    }
+    .contenedor-caja{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 23px;
+    }
+    .caja-portada{
+        border: solid 1px rgb(193, 7, 7);
+        margin: 10px;
+        padding: 10px;
+    }
+    .contenedor-caja img{
+        width: 70px;
+        padding: 5px;
+    }
+    .index-parrafo{
+        width: 100%;
+        height: 300px;
+        padding: 5px;
+    }
+}
+*/
 /*Pagina de servicios*/
 .servicios-caja1 {
   margin: 60px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
   color: rgb(94, 91, 91);
 }
 
 .parrafo1 {
-  text-align: center;
   max-width: 700px;
   padding: 30px;
 }
 
 .contenedor-cajas {
   margin: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 40px;
 }
 .contenedor-cajas .caja {
+  background-color: rgb(251, 245, 245);
   width: 300px;
   margin: 10px;
 }
@@ -143,32 +153,26 @@ body {
   text-decoration: underline;
   color: rgb(94, 91, 91);
   margin-top: 20px;
-  text-align: center;
 }
 .contenedor-cajas .caja .parrafo-servicios {
   font-family: "Nunito Sans", sans-serif;
   margin-top: 25px;
-  text-align: center;
   color: rgb(94, 91, 91);
 }
 .contenedor-cajas .caja img {
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  display: block;
 }
 .contenedor-cajas .caja:hover {
   background-color: rgb(242, 133, 59);
   color: rgb(94, 91, 91);
-  width: 400px;
-  font-size: 25px;
 }
 
 @media (max-width: 800px) {
   .servicios-caja1 {
-    height: 150px;
+    height: 250px;
     margin: 10px;
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
   }
@@ -197,7 +201,6 @@ body {
   height: 100px;
   margin: auto;
   padding: 1rem;
-  text-align: center;
 }
 
 .container-proyectos {
@@ -240,6 +243,19 @@ body {
   }
   .container-proyectos .caja-proyectos1 img {
     height: 400px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container-proyectos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-proyectos .caja-proyectos1:nth-child(1) {
+    grid-column-start: span 1;
+  }
+  .container-proyectos .caja-proyectos1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 /*Fin de Proyectos*/
@@ -307,38 +323,12 @@ body {
   padding: 10px;
 }
 
-@media (max-width: 750px) {
-  .contenedor-contacto {
-    display: flex;
-    justify-content: center;
-  }
-  .contenedor-contacto .contacto-img {
-    width: 100%;
-    height: 200px;
-  }
-  .contacto-formulario {
-    justify-items: center;
-    width: auto;
-    grid-template-rows: repeat(6, 60px);
-    border: solid 0.5px rgb(94, 91, 91);
-    color: rgb(94, 91, 91);
-    grid-template-areas: "nombre" "apellido" "email" "telefono" "mensaje" "boton";
-  }
-  .contacto-titulo {
-    margin: 15px;
-    font-size: 15px;
-  }
-  .contacto-parrafo {
-    margin: 10px;
-    font-size: 10px;
-  }
-}
 .contacto-informacion {
   background-color: black;
   color: white;
   margin-top: 60px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -355,29 +345,57 @@ body {
   height: 200px;
 }
 
+@media (max-width: 750px) {
+  .contenedor-contacto {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-contacto .contacto-img {
+    width: 100%;
+    height: 200px;
+  }
+  .contacto-formulario {
+    justify-items: center;
+    width: 310px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat;
+    color: rgb(94, 91, 91);
+    grid-template-areas: "nombre" "apellido" "email" "telefono" "mensaje" "boton";
+  }
+  .contacto-titulo {
+    margin: 15px;
+    font-size: 15px;
+  }
+  .contacto-parrafo {
+    margin: 10px;
+    font-size: 10px;
+  }
+}
 /*Formulario*/
-/*Conocenos*/
 .nosotros-portada {
   background-image: url("../mutimedia/img/nosotros/foto-valores.jpg");
   height: 90vh;
+  object-fit: cover;
 }
 
-.nosotros-caja1 {
+.section-nosotros {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.section-nosotros .nosotros-caja1 {
   background-color: rgb(255, 235, 214);
-  color: black;
+  color: rgb(94, 91, 91);
 }
-
-.nosotros-caja2 {
+.section-nosotros .nosotros-caja2 {
   background-color: rgb(231, 214, 235);
-  color: black;
+  color: rgb(94, 91, 91);
 }
-
-.nosotros-caja3 {
+.section-nosotros .nosotros-caja3 {
   background-color: rgb(242, 133, 59);
-  color: black;
+  color: rgb(94, 91, 91);
 }
 
-/*Fin de Conocenos*/
 footer {
   width: 100%;
   height: 90px;
@@ -394,6 +412,18 @@ footer .footer-titulo {
   padding: 10px;
   color: white;
   font-size: 15px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.row, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

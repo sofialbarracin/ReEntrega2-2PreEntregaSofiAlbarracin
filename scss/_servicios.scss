@@ -1,0 +1,64 @@
+/*Pagina de servicios*/
+.servicios-caja1{
+    margin: 60px;
+    color: $font-color;
+}
+.parrafo1{
+    max-width: 700px;
+    padding: 30px;
+
+}
+.contenedor-cajas{
+    margin: 40px;
+    gap: 40px;
+    .caja{
+        background-color: rgb(251, 245, 245);
+        width: 300px;
+        margin: 10px;
+        .titulo-servicios{
+            text-decoration: underline;
+            color: $font-color;
+            margin-top: 20px;
+        }
+        .parrafo-servicios{
+            font-family: 'Nunito Sans', sans-serif;
+            margin-top: 25px;
+            color: $font-color;
+        }
+    }
+    .caja img{
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .caja:hover{
+        background-color: rgb(242, 133, 59);
+        color: $font-color;
+    }
+    }
+@media (max-width: 800px){
+    .servicios-caja1{
+        height: 250px;
+        margin: 10px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .contenedor-cajas{
+        margin: 15px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        .caja{
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            .caja img{
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+                display: block ;
+            }
+        }
+    }
+}
+/*Fin de pagina servicios*/

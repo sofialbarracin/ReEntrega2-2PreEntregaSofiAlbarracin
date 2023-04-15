@@ -1,0 +1,25 @@
+
+
+.nosotros-portada{
+    background-image: url("../mutimedia/img/nosotros/foto-valores.jpg");
+    height: 90vh;
+    object-fit: cover;
+}
+.section-nosotros{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    .nosotros-caja1{
+        background-color: rgb(262, 235, 214);
+        color: $font-color;
+    }
+    .nosotros-caja2{
+        background-color: rgb(231, 214, 235);
+        color: $font-color;
+    }
+    .nosotros-caja3{
+        background-color: rgb(242, 133,59);
+        color: $font-color;
+    }
+    
+}
