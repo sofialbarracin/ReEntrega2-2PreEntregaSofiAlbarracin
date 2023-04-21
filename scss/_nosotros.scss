@@ -1,12 +1,21 @@
-
-
 .nosotros-portada{
-    background-image: url("../mutimedia/img/nosotros/foto-valores.jpg");
-    height: 90vh;
-    object-fit: cover;
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
+.nosotros-titulo{
+    color: $font-color;
+    padding: 30px;}
+    h4{
+        padding: 2rem;
+        font-size: 40px;
+    }
+    p{
+        padding: 10px;
+    }
 .section-nosotros{
     width: 100%;
+    max-width: 1600px;
+    margin: 0;
     display: flex;
     flex-flow: row wrap;
     .nosotros-caja1{
@@ -21,5 +30,16 @@
         background-color: rgb(242, 133,59);
         color: $font-color;
     }
-    
+}
+@media(max-width:750px){
+    .nosotros-portada{
+        background-size: cover; 
+        background-repeat: no-repeat;
+        img{
+            height: 200px;
+        }
+    }
+    h4{
+        font-size: 20px;
+    }
 }

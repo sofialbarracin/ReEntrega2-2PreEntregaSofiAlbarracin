@@ -33,14 +33,11 @@
 }
 @media screen and (max-width:500px){
     .container-proyectos{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .container-proyectos .caja-proyectos1:nth-child(1){
         grid-column-start: span 1;
-    }
-    .container-proyectos .caja-proyectos1 img{
-        height: 400px;
     }
 }
 @media screen and (max-width:350px){

@@ -9,12 +9,12 @@
     flex-direction: column;
     align-items: center;
     .contacto-titulo{
-        margin: 60px;
+        margin: 40px;
         font-size: 30px;
         color: $font-color;
     }
     .contacto-parrafo{
-        margin: 40px;
+        padding: 20px;
         font-size: 20px;
         color: $font-color;
     }
@@ -77,11 +77,6 @@
     }
     .contacto-info2{
         padding: 30px;
-    }
-    .mapa{
-        padding: 30px;
-        width: 200px;
-        height: 200px;
     }
 }
 @media(max-width:750px){

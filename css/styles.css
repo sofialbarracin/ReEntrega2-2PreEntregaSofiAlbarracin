@@ -1,5 +1,10 @@
-/* Navegador */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+} /* Navegador */
 .navbar-brand {
   width: 75px;
   height: 75px;
@@ -12,18 +17,18 @@ body {
 }
 
 .contenedor-portada {
-  width: 100%;
-  height: 500px;
   background-color: rgb(235, 233, 233);
   display: flex;
   flex-flow: row wrap;
 }
-.contenedor-portada .titulo1 {
+
+.titulo1 {
   color: rgb(0, 0, 0);
   font-size: 90px;
   padding: 3rem;
 }
-.contenedor-portada .parrafo-portada {
+
+.parrafo-portada {
   color: rgb(242, 133, 59);
   font-size: 40px;
 }
@@ -38,7 +43,6 @@ body {
 }
 .contenedor-caja .caja-portada {
   border: solid 1px black;
-  height: 600px;
   margin: 15px;
   border-radius: 10%;
   background-color: rgb(242, 133, 59);
@@ -56,7 +60,6 @@ body {
 }
 .contenedor-caja .index-parrafo {
   width: 300px;
-  height: 300px;
   color: rgb(94, 91, 91);
   padding: 10px;
   font-size: 20px;
@@ -64,14 +67,17 @@ body {
 
 @media (max-width: 800px) {
   .contenedor-portada {
-    height: 600px;
+    text-align: center;
+    padding: 1rem;
   }
-  .titulo1 {
-    font-size: 5px;
+  .contenedor-portada .titulo1 {
+    font-size: 35px;
+    margin-bottom: 3rem;
     padding: 0;
   }
-  .parrafo-portada p {
-    font-size: 5px;
+  .contenedor-portada .parrafo-portada {
+    font-size: 25px;
+    text-align: center;
   }
   .contenedor-caja {
     flex-direction: column;
@@ -80,7 +86,6 @@ body {
   }
   .caja-portada {
     border: solid 1px black;
-    height: 380px;
     margin: 10px;
     padding: 10px;
   }
@@ -90,7 +95,6 @@ body {
   }
   .index-parrafo {
     font-size: 15px;
-    height: 300px;
     padding: 5px;
   }
 }
@@ -134,6 +138,9 @@ body {
   margin: 60px;
   color: rgb(94, 91, 91);
 }
+.servicios-caja1 h4 {
+  font-size: 40px;
+}
 
 .parrafo1 {
   max-width: 700px;
@@ -146,8 +153,9 @@ body {
 }
 .contenedor-cajas .caja {
   background-color: rgb(251, 245, 245);
-  width: 300px;
-  margin: 10px;
+  width: 350px;
+  padding: 15px;
+  border-radius: 10%;
 }
 .contenedor-cajas .caja .titulo-servicios {
   text-decoration: underline;
@@ -236,13 +244,10 @@ body {
 
 @media screen and (max-width: 500px) {
   .container-proyectos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .container-proyectos .caja-proyectos1:nth-child(1) {
     grid-column-start: span 1;
-  }
-  .container-proyectos .caja-proyectos1 img {
-    height: 400px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -272,12 +277,12 @@ body {
   align-items: center;
 }
 .contacto-caja .contacto-titulo {
-  margin: 60px;
+  margin: 40px;
   font-size: 30px;
   color: rgb(94, 91, 91);
 }
 .contacto-caja .contacto-parrafo {
-  margin: 40px;
+  padding: 20px;
   font-size: 20px;
   color: rgb(94, 91, 91);
 }
@@ -339,11 +344,6 @@ body {
 .contacto-informacion .contacto-info2 {
   padding: 30px;
 }
-.contacto-informacion .mapa {
-  padding: 30px;
-  width: 200px;
-  height: 200px;
-}
 
 @media (max-width: 750px) {
   .contenedor-contacto {
@@ -373,13 +373,28 @@ body {
 }
 /*Formulario*/
 .nosotros-portada {
-  background-image: url("../mutimedia/img/nosotros/foto-valores.jpg");
-  height: 90vh;
-  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nosotros-titulo {
+  color: rgb(94, 91, 91);
+  padding: 30px;
+}
+
+h4 {
+  padding: 2rem;
+  font-size: 40px;
+}
+
+p {
+  padding: 10px;
 }
 
 .section-nosotros {
   width: 100%;
+  max-width: 1600px;
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
 }
@@ -396,6 +411,18 @@ body {
   color: rgb(94, 91, 91);
 }
 
+@media (max-width: 750px) {
+  .nosotros-portada {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .nosotros-portada img {
+    height: 200px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
 footer {
   width: 100%;
   height: 90px;
