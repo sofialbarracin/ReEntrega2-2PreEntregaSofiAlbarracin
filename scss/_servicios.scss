@@ -1,24 +1,23 @@
-/*Pagina de servicios*/
+@import "mixin";
 .servicios-caja1{
     margin: 60px;
     color: $font-color;
     h4{
         font-size: 40px;
-} 
-}
-.parrafo1{
-    max-width: 700px;
-    padding: 30px;
+    }
+    .parrafo1{
+        max-width: 700px;
+        padding: 30px;
+    }
 }
 .contenedor-cajas{
     margin: 40px;
     gap: 40px;
     .caja{
+        @include tamaños(350px);
         background-color: rgb(251, 245, 245);
-        width: 350px;
         padding: 15px;
         border-radius: 10%;
-     
         .titulo-servicios{
             text-decoration: underline;
             color: $font-color;

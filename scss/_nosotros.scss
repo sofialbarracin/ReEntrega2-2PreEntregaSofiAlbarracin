@@ -1,6 +1,9 @@
 .nosotros-portada{
     background-size: cover; 
     background-repeat: no-repeat;
+    img{
+        width: 100%;
+    }
 }
 .nosotros-titulo{
     color: $font-color;
